@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Internship" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="17947cde-4782-44f1-8ee5-c70843d61673">
+	<parameter name="nameEntreprise" class="java.lang.String"/>
+	<parameter name="nameResponsable" class="java.lang.String"/>
+	<parameter name="tel" class="java.lang.String"/>
+	<parameter name="fax" class="java.lang.String"/>
+	<parameter name="emailEntreprise" class="java.lang.String"/>
+	<parameter name="emailResponsable" class="java.lang.String"/>
+	<parameter name="siteweb" class="java.lang.String"/>
+	<parameter name="pays" class="java.lang.String"/>
+	<parameter name="adresse" class="java.lang.String"/>
+	<parameter name="emailEtudiant" class="java.lang.String"/>
+	<parameter name="nameEtudiant" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="80" splitType="Stretch">
+			<image>
+				<reportElement x="193" y="0" width="250" height="80" uuid="465b49af-1155-49db-bd8a-4297414f2ea2"/>
+				<imageExpression><![CDATA["C:\\Users\\lhbya\\git\\4twin3-osp-pfe\\4twin3-osp-pfe-ejb\\src\\main\\resources\\images\\logo.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="71" splitType="Stretch">
+			<rectangle>
+				<reportElement x="10" y="18" width="540" height="37" backcolor="#D9BFBF" uuid="5646e79d-cb0f-4bee-9a46-f4daeaf4a4ce">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="152" y="26" width="310" height="23" uuid="a79eefd5-083a-47d9-82b3-1f2e22ae4cca"/>
+				<textElement>
+					<font size="15"/>
+				</textElement>
+				<text><![CDATA[CONVENTION DE STAGE DE PFE]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="73" splitType="Stretch">
+			<staticText>
+				<reportElement x="15" y="-7" width="540" height="70" uuid="e5abfb9b-dcc9-49c2-afe8-65853a6d13e3">
+					<property name="com.jaspersoft.studio.unit.height" value="pixel"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[
+La présente convention a pour objet régler les rapports entre le stagiaire, l'Entreprise d'accueil et l'Etablissement d'Enseignement. Elle définit les conditions dans lesquelles le stagiaire sera accueilli dans l'entreprise.]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="562" splitType="Stretch">
+			<rectangle>
+				<reportElement x="10" y="2" width="190" height="35" backcolor="#D9BFBF" uuid="5068339e-55c0-424f-868c-c11e2deeda3d">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="10" width="180" height="30" uuid="d7bbcc0a-d2a7-42b9-96b9-405930a585d2"/>
+				<textElement>
+					<font size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ENTREPRISE D'ACCUEIL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="47" width="147" height="30" uuid="ee8839b6-0814-41f5-b6de-1ddc910e226d">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Nom de l'entreprise : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="74" width="160" height="30" uuid="fcd095e5-fe27-48f9-95a7-dd6881f94d12">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Représentée par :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="100" width="147" height="30" uuid="57c5b9a4-2f96-4029-9680-c77689600e9f">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Tel : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="127" width="147" height="30" uuid="d61f8d2c-e6f7-471c-b6f3-58752542135c">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Fax :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="154" width="147" height="30" uuid="d764f667-a4c6-478e-8830-6ded54ea56d6">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[E-mail de l'entreprise : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="180" width="160" height="30" uuid="e126f6d1-f14e-42e6-8b1d-ec64e98e4f4f">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[E-mail de responsable :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="206" width="147" height="30" uuid="10b69531-8a4b-4f16-b2bd-3a95ff741ddb">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Site web : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="232" width="147" height="30" uuid="e1cb3e76-6238-4610-b326-d38bd7e33a99">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Pays :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="259" width="147" height="30" uuid="3484eb62-0e81-4ffc-ae23-50dd171bd7f6">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Adresse :]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="292" width="130" height="35" backcolor="#D9BFBF" uuid="34ae9519-deb7-4521-9951-b344a13e8abc">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="300" width="110" height="30" uuid="83bec907-0cc6-4242-8b8f-a7da7ec0affb"/>
+				<textElement>
+					<font size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[STAGIAIRE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="363" width="147" height="30" uuid="1dc8645b-462f-46b0-8700-a5180e18672a">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[E-mail : ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="336" width="190" height="30" uuid="690b8b3c-a125-41cf-941d-672fbb9d60f8">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<text><![CDATA[Nom et prénom du stagiaire : ]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="10" y="397" width="280" height="35" backcolor="#D9BFBF" uuid="72b237f7-447a-471a-98e8-faade11c71c5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="20" y="405" width="250" height="30" uuid="1d407d4e-bb9a-4eaf-b1c6-086da86dafbd"/>
+				<textElement>
+					<font size="13" isBold="false"/>
+				</textElement>
+				<text><![CDATA[ETABLISSEMENT D'ENSEIGNEMENT]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="447" width="540" height="30" uuid="d88f0d45-10da-4bc5-acd9-e29002237579">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESPRIT : Ecole Sup Privée d'Ingénierie et de Technologies]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="469" width="540" height="18" uuid="c7ccf9b5-ec1b-44c7-859e-61f19a9cde33">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[T (216) 70 685 685
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="492" width="540" height="18" uuid="1a87eca6-f9ee-4f75-9b9b-ae1c88928396">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email : contact@esprit.tn]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="514" width="540" height="18" uuid="75ce616d-2d7e-4a0d-95b6-b7bd2d4b5048">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Z.I. Chotrana II B.P. 160]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="537" width="540" height="18" uuid="75bfc14f-5b22-4499-a2b8-7d9ef2422db5">
+					<property name="com.jaspersoft.studio.unit.y" value="px"/>
+				</reportElement>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pôle Technologique El Ghazela - Ariana 2083
+]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="201" y="48" width="349" height="30" uuid="9ee6fbc6-6e85-41e1-8958-178caa2a3fdd"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nameEntreprise}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="74" width="349" height="30" uuid="bd9c45eb-a366-4290-8506-3cf533e7b6a8"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nameResponsable}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="101" width="349" height="30" uuid="26e16e95-998d-4c7e-8b71-823a07a10b38"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{tel}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="128" width="349" height="30" uuid="8a65373c-b614-484a-95d3-2ff3b2af3aef"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{fax}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="154" width="349" height="30" uuid="8736e35f-270a-4a15-ad59-79c0f8c19cdc"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{emailEntreprise}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="179" width="349" height="30" uuid="ed307388-eb25-4eba-8aa2-3a5e247858eb"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{emailResponsable}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="205" width="349" height="30" uuid="b5c95069-e6e8-408b-9c83-9ac09bcc9269"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{siteweb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="231" width="349" height="30" uuid="cc5853d4-28ec-4749-bac9-449a1c6fe6c4"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{pays}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="258" width="349" height="30" uuid="ec01899f-7834-4709-a955-bde9e4ff17ab"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{adresse}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="365" width="350" height="30" uuid="19772aba-9558-42da-b1d8-008aff4cc389"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{emailEtudiant}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="200" y="335" width="350" height="30" uuid="d5e04154-1482-4c44-b133-492e134361a2"/>
+				<textElement>
+					<font size="13"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$P{nameEtudiant}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
